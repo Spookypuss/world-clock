@@ -13,10 +13,20 @@ h1 {
     text-align:center;
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+hr {
+    border-style: dotted;
+}
+
 select {
+    display: block;
     margin: 10px auto 20px;
     padding: 5px;
-    width: 90%;
+    width: 100%;
 }
 
 .clock {
@@ -28,12 +38,18 @@ select {
 
 .container {
     background: white;
-    border: 1px solid #5d5d5d;
     border-radius: 5px;
+    box-shadow: 0px 10px 30px 0px rgba(100,100,111, 0.2);
     margin: 30px auto;
     max-width: 600px;
     padding: 20px;
     }
+
+.date {
+    display: flex;
+    justify-content: left;
+    opacity: 0.6;
+}
 
 .location {
     font-size: 24px;

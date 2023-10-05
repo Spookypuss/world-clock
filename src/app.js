@@ -23,20 +23,32 @@ let saoPauloDate = moment().tz("America/Sao_Paulo").format("dddd Do MMMM YYYY");
 let saoPauloTimeElement = document.querySelector("#sao-paulo-time");
 saoPauloTimeElement.innerHTML = saoPauloTime;
 let saoPauloDateElement = document.querySelector("#sao-paulo-date");
-saoPauloDateElement.innerHTML = saoPauloDate;
+saoPauloDateElement.innerHTML = saoPauloDate; //something is happening here
 
-let dublinTime = moment().tz("Europe/Dublin").format("dddd HH:mm");
-let dublinElement = document.querySelector("#dublin");
-dublinElement.innerHTML = `Dublin: ${dublinTime}`;
+let dublinTime = moment().tz("Europe/Dublin").format("hh:mm:ss A");
+let dublinDate = moment().tz("Europe/Dublin").format("dddd Do MMMM YYYY");
+let dublinTimeElement = document.querySelector("#dublin");
+dublinTimeElement.innerHTML = "ANYONE?!";
+let dublinDateElement = document.querySelector("#dublin-date");
+dublinDateElement.innerHTML = "Hello!!";
 
-let karachiTime = moment().tz("Asia/Karachi").format("dddd HH:mm");
-let karachiElement = document.querySelector("#karachi");
-karachiElement.innerHTML = `Karachi: ${karachiTime}`;
+let karachiTime = moment().tz("Asia/Karachi").format("hh:mm:ss A");
+let karachiDate = moment().tz("Asia/Karachi").format("dddd Do MMMM YYYY");
+let karachiTimeElement = document.querySelector("#karachi");
+karachiTimeElement.innerHTML = karachiTime;
+let karachiDateElement = document.querySelector("#karachi-date");
+karachiDateElement.innerHTML = karachiDate;
 
-let tokyoTime = moment().tz("Asia/Tokyo").format("dddd HH:mm");
-let tokyoElement = document.querySelector("#tokyo");
-tokyoElement.innerHTML = `Tokyo: ${tokyoTime}`;
+let tokyoTime = moment().tz("Asia/Tokyo").format("hh:mm:ss A");
+let tokyoDate = moment().tz("Asia/Tokyo").format("dddd Do MMMM YYYY");
+let tokyoTimeElement = document.querySelector("#tokyo");
+tokyoTimeElement.innerHTML = tokyoTime;
+let tokyoDateElement = document.querySelector("#tokyo-date");
+tokyoDateElement.innerHTML = tokyoDate;
 
-let aucklandTime = moment().tz("Pacific/Auckland").format("dddd HH:mm");
-let aucklandElement = document.querySelector("#auckland");
-aucklandElement.innerHTML = `Auckland: ${aucklandTime}`;
+let aucklandTime = moment().tz("Pacific/Auckland").format("hh:mm:ss A");
+let aucklandDate = moment().tz("Pacific/Auckland").format("dddd Do MMMM YYYY");
+let aucklandTimeElement = document.querySelector("#auckland");
+aucklandTimeElement.innerHTML = aucklandTime;
+let aucklandDateElement = document.querySelector("#auckland-date");
+aucklandDateElement.innerHTML = aucklandDate;
