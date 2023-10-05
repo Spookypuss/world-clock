@@ -29,6 +29,11 @@ select {
     width: 100%;
 }
 
+small {
+    font-size: 14px;
+    line-height: 24px;
+}
+
 .clock {
     padding: 5px;
     font-size: 36px;

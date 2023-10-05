@@ -2,35 +2,42 @@
 // and format date to dddd Do MMMM
 
 // make function to update times every second
-
-let localTime = moment().format("hh:mm:ss A");
-let localDate = moment().format("dddd Do MMMM YYYY");
+function displayLocal() {
+let localTime = moment();
 let localTimeElement = document.querySelector("#local-time");
-let localTimeZone = moment.tz.guess();
-localTimeElement.innerHTML = localTime;
+localTimeElement.innerHTML = localTime.format("h:mm:ss [<small>]A[</small>]");
 let localDateElement = document.querySelector("#local-date");
-localDateElement.innerHTML = localDate;
+localDateElement.innerHTML = localTime.format("dddd Do MMMM YYYY");
+}
 
-let vancouverTime = moment().tz("America/Vancouver").format("hh:mm:ss A");
-let vancouverDate = moment().tz("America/Vancouver").format("dddd Do MMMM YYYY");
+displayLocal();
+setInterval(displayLocal, 1000); //updates function every second
+
+function displayWorld() {
+let vancouverTime = moment().tz("America/Vancouver");
 let vancouverTimeElement = document.querySelector("#vancouver-time");
-vancouverTimeElement.innerHTML = vancouverTime;
+vancouverTimeElement.innerHTML = vancouverTime.format("h:mm:ss [<small>]A[</small>]");
 let vancouverDateElement = document.querySelector("#vancouver-date");
-vancouverDateElement.innerHTML = vancouverDate;
+vancouverDateElement.innerHTML = vancouverTime.format("dddd Do MMMM YYYY");
 
-let saoPauloTime = moment().tz("America/Sao_Paulo").format("hh:mm:ss A");
-let saoPauloDate = moment().tz("America/Sao_Paulo").format("dddd Do MMMM YYYY");
+let saoPauloTime = moment().tz("America/Sao_Paulo");
 let saoPauloTimeElement = document.querySelector("#sao-paulo-time");
-saoPauloTimeElement.innerHTML = saoPauloTime;
+saoPauloTimeElement.innerHTML = saoPauloTime.format("h:mm:ss [<small>]A[</small>]");
 let saoPauloDateElement = document.querySelector("#sao-paulo-date");
-saoPauloDateElement.innerHTML = saoPauloDate; //something is happening here
+saoPauloDateElement.innerHTML = saoPauloTime.format("dddd Do MMMM YYYY"); //something is happening here
 
-let dublinTime = moment().tz("Europe/Dublin").format("hh:mm:ss A");
-let dublinDate = moment().tz("Europe/Dublin").format("dddd Do MMMM YYYY");
+let dublinTime = moment().tz("Europe/Dublin");
 let dublinTimeElement = document.querySelector("#dublin");
-dublinTimeElement.innerHTML = "ANYONE?!";
+dublinTimeElement.innerHTML = "hello?";
 let dublinDateElement = document.querySelector("#dublin-date");
-dublinDateElement.innerHTML = "Hello!!";
+dublinDateElement.innerHTML = dublinTime.format("dddd Do MMMM YYYY");
+
+}
+
+displayWorld();
+setInterval(displayWorld, 1000);
+
+
 
 let karachiTime = moment().tz("Asia/Karachi").format("hh:mm:ss A");
 let karachiDate = moment().tz("Asia/Karachi").format("dddd Do MMMM YYYY");
@@ -39,7 +46,7 @@ karachiTimeElement.innerHTML = karachiTime;
 let karachiDateElement = document.querySelector("#karachi-date");
 karachiDateElement.innerHTML = karachiDate;
 
-let tokyoTime = moment().tz("Asia/Tokyo").format("hh:mm:ss A");
+let tokyoTime = moment().tz("Asia/Tokyo").format("h:mm:ss A");
 let tokyoDate = moment().tz("Asia/Tokyo").format("dddd Do MMMM YYYY");
 let tokyoTimeElement = document.querySelector("#tokyo");
 tokyoTimeElement.innerHTML = tokyoTime;
