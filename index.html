@@ -3,14 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World clock</title>
 </head>
 <body>
-    <h1>
-        World clock ⏰
-    </h1>
-    <footer><a href="#">Open source</a> coded by Lyn Rycroft</footer>
+    <div class="container">
+        <h1>
+            World clock
+        </h1>
+            <select> <!-- city selector drop down -->
+                <option value="">Select a city</option>
+                <option value="Pacific/Auckland">Auckland</option>
+                <option value="Europe/Dublin">Dublin</option>
+                <option value="Asia/Karachi">Karachi</option>
+                <option value="America/Sao_Paulo">São Paulo</option>
+                <option value="Asia/Tokyo">Tokyo</option>
+                <option value="America/Vancouver">Vancouver</option>
+            </select>
+            <div class="row"> <!-- the start of the clocks -->
+                <div class="col"> <!-- location and date first -->
+                    <div class="row location">
+                        Local time
+                    </div>
+                    <div class="row date" id="local-date">
+                    </div>
+                </div>
+                <div class="col"> <!-- time second -->
+                    <div class="clock" id="local-time">
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col"> <!-- location and date first -->
+                    <div class="row location">
+                        Vancouver 🇨🇦
+                    </div>
+                    <div class="row date" id="vancouver-date">
+                    </div>
+                </div>
+                <div class="col"> <!-- time second -->
+                    <div class="clock" id="vancouver-time">
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col"> <!-- location and date first -->
+                    <div class="row location">
+                        São Paulo 🇧🇷
+                    </div>
+                    <div class="row date" id="sao-paulo-date">
+                    </div>
+                </div>
+                <div class="col"> <!-- time second -->
+                    <div class="clock" id="sao-paulo-time">
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col"> <!-- location and date first -->
+                    <div class="row location">
+                        Dublin 🇮🇪
+                    </div>
+                    <div class="row date" id="dublin-date">
+                    </div>
+                </div>
+                <div class="col"> <!-- time second -->
+                    <div class="clock" id="dublin-time">
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col"> <!-- location and date first -->
+                    <div class="row location">
+                        Karachi 🇵🇰
+                    </div>
+                    <div class="row date" id="karachi-date">
+                    </div>
+                </div>
+                <div class="col"> <!-- time second -->
+                    <div class="clock" id="karachi-time">
+                    </div>
+                </div>
+            </div>  
+            <hr />
+            <div class="row">
+                <div class="col"> <!-- location and date first -->
+                    <div class="row location">
+                        Tokyo 🇯🇵
+                    </div>
+                    <div class="row date" id="tokyo-date">
+                    </div>
+                </div>
+                <div class="col"> <!-- time second -->
+                    <div class="clock" id="tokyo-time">
+                    </div>
+                </div>
+            </div> 
+            <hr />
+            <div class="row">
+                <div class="col"> <!-- location and date first -->
+                    <div class="row location">
+                        Auckland 🇳🇿
+                    </div>
+                    <div class="row date" id="auckland-date">
+                    </div>
+                </div>
+                <div class="col"> <!-- time second -->
+                    <div class="clock" id="auckland-time">
+                    </div>
+                </div>
+            </div> 
+        
+    </div>
+    <footer><a href="https://github.com/Spookypuss/world-clock">Open source</a> coded by Lyn Rycroft</footer>
     <script src="src/app.js"></script>
 </body>
 </html>
