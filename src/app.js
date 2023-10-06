@@ -75,7 +75,8 @@ if (cityTimeZone === "current") {
                     <div class="clock">${cityTime.format("h:mm:ss [<small>]A[</small>]")}
                     </div>
                 </div>
-                <hr />`
+                <hr />
+                <a href="/" id="home">Home</a>`
 }
 
 let citiesSelectElement = document.querySelector("#city");
