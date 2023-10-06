@@ -56,6 +56,12 @@ small {
     opacity: 0.6;
 }
 
+.local {
+    border: 3px solid #f7f3ff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .location {
     font-size: 24px;
     font-weight: 800;

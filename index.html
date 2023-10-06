@@ -19,7 +19,7 @@
         <h1>
             World clock
         </h1>
-            <select> <!-- city selector drop down -->
+        <select id="city"> <!-- city selector drop down -->
                 <option value="">Select a city</option>
                 <option value="Pacific/Auckland">Auckland</option>
                 <option value="Europe/Dublin">Dublin</option>
@@ -27,10 +27,9 @@
                 <option value="America/Sao_Paulo">São Paulo</option>
                 <option value="Asia/Tokyo">Tokyo</option>
                 <option value="America/Vancouver">Vancouver</option>
-            </select>
+        </select>
 
-        
-            <div class="row"> <!-- the start of the clocks -->
+            <div class="row local"> <!-- the start of the clocks -->
                 <div class="col"> <!-- location and date first -->
                     <div class="row location">
                         Local time
@@ -43,13 +42,15 @@
                     </div>
                 </div>
             </div>
-            <hr />
-            <div class="row">
-                <div class="col"> <!-- location and date first -->
-                    <div class="row location">
+            <div id="cities"></div>
+            <div>
+            <br />
+                <div class="row">
+                    <div class="col"> <!-- location and date first -->
+                        <div class="row location">
                         Vancouver 🇨🇦
-                    </div>
-                    <div class="row date" id="vancouver-date">
+                        </div>
+                        <div class="row date" id="vancouver-date">
                     </div>
                 </div>
                 <div class="col"> <!-- time second -->
@@ -57,7 +58,9 @@
                     </div>
                 </div>
             </div>
+            </div>
             <hr />
+
             <div class="row">
                 <div class="col"> <!-- location and date first -->
                     <div class="row location">
