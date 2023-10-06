@@ -21,6 +21,7 @@
         </h1>
         <select id="city"> <!-- city selector drop down -->
                 <option value="">Select a city</option>
+                <option value="current">Local time</option>
                 <option value="Pacific/Auckland">Auckland</option>
                 <option value="Europe/Dublin">Dublin</option>
                 <option value="Asia/Karachi">Karachi</option>
@@ -29,42 +30,12 @@
                 <option value="America/Vancouver">Vancouver</option>
         </select>
 
-            <div class="row local"> <!-- the start of the clocks -->
-                <div class="col"> <!-- location and date first -->
-                    <div class="row location">
-                        Local time
-                    </div>
-                    <div class="row date" id="local-date">
-                    </div>
-                </div>
-                <div class="col"> <!-- time second -->
-                    <div class="clock" id="local-time">
-                    </div>
-                </div>
-            </div>
             <div id="cities"></div>
             <div>
-            <br />
-                <div class="row">
-                    <div class="col"> <!-- location and date first -->
-                        <div class="row location">
-                        Vancouver 🇨🇦
-                        </div>
-                        <div class="row date" id="vancouver-date">
-                    </div>
-                </div>
-                <div class="col"> <!-- time second -->
-                    <div class="clock" id="vancouver-time">
-                    </div>
-                </div>
-            </div>
-            </div>
-            <hr />
-
             <div class="row">
                 <div class="col"> <!-- location and date first -->
                     <div class="row location">
-                        São Paulo 🇧🇷
+                        São Paulo
                     </div>
                     <div class="row date" id="sao-paulo-date">
                     </div>
@@ -78,21 +49,7 @@
             <div class="row">
                 <div class="col"> <!-- location and date first -->
                     <div class="row location">
-                        Dublin 🇮🇪
-                    </div>
-                    <div class="row date" id="dublin-date">
-                    </div>
-                </div>
-                <div class="col"> <!-- time second -->
-                    <div class="clock" id="dublin-time">
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div class="row">
-                <div class="col"> <!-- location and date first -->
-                    <div class="row location">
-                        Karachi 🇵🇰
+                        Karachi
                     </div>
                     <div class="row date" id="karachi-date">
                     </div>
@@ -106,21 +63,7 @@
             <div class="row">
                 <div class="col"> <!-- location and date first -->
                     <div class="row location">
-                        Tokyo 🇯🇵
-                    </div>
-                    <div class="row date" id="tokyo-date">
-                    </div>
-                </div>
-                <div class="col"> <!-- time second -->
-                    <div class="clock" id="tokyo-time">
-                    </div>
-                </div>
-            </div> 
-            <hr />
-            <div class="row">
-                <div class="col"> <!-- location and date first -->
-                    <div class="row location">
-                        Auckland 🇳🇿
+                        Auckland
                     </div>
                     <div class="row date" id="auckland-date">
                     </div>
@@ -130,9 +73,14 @@
                     </div>
                 </div>
             </div> 
-        
+            <br />
+            
+        </div>
+        <a href="#" id="home">Home page</a>
     </div>
-    <footer><a href="https://github.com/Spookypuss/world-clock">Open source</a> coded by Lyn Rycroft</footer>
+
+    <footer><a href="https://github.com/Spookypuss/world-clock" target="_blank">Open source</a> coded by Lyn Rycroft</footer>
     <script src="src/app.js"></script>
+    
 </body>
 </html>
